@@ -87,4 +87,4 @@ Manal Sewaied
 
 Software QA Engineer
 
-[Linked in]
+[[Linked in]](https://www.linkedin.com/in/manal-sewaied-76bb18216/)
