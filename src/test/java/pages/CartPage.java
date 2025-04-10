@@ -29,13 +29,13 @@ public class CartPage {
             WebElement proceedBtn = wait.until(ExpectedConditions.elementToBeClickable(By.id("sc-buy-box-ptc-button")));
             proceedBtn.click();
         } catch (TimeoutException e) {
-            System.out.println("❌ Proceed to Checkout button not found.");
+            System.out.println("Proceed to Checkout button not found.");
         }
     }
 
     public void check(){
         WebElement cartCount = driver.findElement(By.id("nav-cart-count"));
-        System.out.println("🧮 Cart count: " + cartCount.getText());
+        System.out.println("Cart count: " + cartCount.getText());
     }
 
     public double getDisplayedCartTotal() {
@@ -47,11 +47,11 @@ public class CartPage {
             String cleanText = totalText.replaceAll("[^\\d.,]", "").replace(",", "");
 
             double total = Double.parseDouble(cleanText);
-            System.out.println("🛒 Cart Page Total (Parsed): " + total);
+            System.out.println("Cart Page Total (Parsed): " + total);
             return total;
 
         } catch (NoSuchElementException | NumberFormatException e) {
-            System.out.println("❌ Could not read total from cart: " + e.getMessage());
+            System.out.println("Could not read total from cart: " + e.getMessage());
             return -1;
         }
     }
