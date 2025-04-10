@@ -70,6 +70,19 @@ OTP must be entered manually within the allotted time (10 seconds)
 
 **⚠️ Credentials are not stored or shared for security reasons**
 
+
+## 🧩 Dependencies
+
+This project uses the following main libraries:
+
+- **Selenium Java** `4.20.0` – for web automation  
+- **TestNG** `7.9.0` – for organizing and running tests  
+- **WebDriverManager** `5.3.2` – for managing browser drivers automatically  
+- **SLF4J API** `2.0.6` – for logging  
+- **Gson** `2.10.1` – (optional, if used) for JSON parsing  
+- **Apache Commons IO** `2.6` – (optional, if used) for file operations
+You can find all dependencies in the `pom.xml` file.
+  
 ## **Prerequisites**
 
 - Java 17+ (Project uses Java 21)
@@ -77,7 +90,6 @@ OTP must be entered manually within the allotted time (10 seconds)
 - Maven 3.8+
 
 - Firefox browser
-
 
 
 ### **Author**
