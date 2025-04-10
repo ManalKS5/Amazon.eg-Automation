@@ -73,15 +73,14 @@ OTP must be entered manually within the allotted time (10 seconds)
 
 ## 🧩 Dependencies
 
-This project uses the following main libraries:
+This project uses the following libraries:
 
-- **Selenium Java** `4.20.0` – for web automation  
-- **TestNG** `7.9.0` – for organizing and running tests  
-- **WebDriverManager** `5.3.2` – for managing browser drivers automatically  
-- **SLF4J API** `2.0.6` – for logging  
-- **Gson** `2.10.1` – (optional, if used) for JSON parsing  
-- **Apache Commons IO** `2.6` – (optional, if used) for file operations
+- **Selenium Java** – For browser automation  
+- **WebDriverManager** – To manage browser drivers automatically  
+- **TestNG** – For structuring and running automated tests
+
 You can find all dependencies in the `pom.xml` file.
+
   
 ## **Prerequisites**
 
