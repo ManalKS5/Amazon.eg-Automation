@@ -32,8 +32,7 @@ This project automates a real-world scenario on [Amazon.eg](https://www.amazon.e
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/amazon-eg-automation.git
-cd amazon-eg-automation
+git clone https://github.com/ManalKS5/Amazon.eg-Automation.git
 ```
 ### 2. **Install Maven Dependencies**
    Make sure you have Maven installed, then run:
