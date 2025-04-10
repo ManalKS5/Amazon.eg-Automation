@@ -32,7 +32,7 @@ public class amazonTest {
     }
 
     @Test
-    public void testAddProductsBelow15000ToCart() throws InterruptedException {
+    public void testCase1() throws InterruptedException {
         homePage.openHamburgerMenu();
         homePage.clickShowAll();
         homePage.goToVideoGames();
