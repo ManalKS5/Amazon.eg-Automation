@@ -103,10 +103,10 @@ public class VideoGamesPage {
         Thread.sleep(3000);
 
         itemsTotal += price;
-        System.out.println("🧾 Running Total Updated: " + itemsTotal);
+        System.out.println("Running Total Updated: " + itemsTotal);
 
         String cartCount = driver.findElement(By.id("nav-cart-count")).getText();
-        System.out.println("🛒 Cart count after click: " + cartCount);
+        System.out.println("Cart count after click: " + cartCount);
     }
 
     public void moveThroughPages(int maxPages) throws InterruptedException {
