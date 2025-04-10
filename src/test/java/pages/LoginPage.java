@@ -61,7 +61,7 @@ public class LoginPage {
 
     public void submitLogin() throws InterruptedException {
         driver.findElement(signInButton).click();
-        Thread.sleep(10000); // ⏳ Allow time for manual OTP entry
+        Thread.sleep(10000); // Allow time for manual OTP entry
     }
 
 }
