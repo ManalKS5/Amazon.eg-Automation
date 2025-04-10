@@ -47,7 +47,7 @@ public class CartPage {
             String cleanText = totalText.replaceAll("[^\\d.,]", "").replace(",", "");
 
             double total = Double.parseDouble(cleanText);
-            System.out.println("Cart Page Total (Parsed): " + total);
+            //System.out.println("Cart Page Total: " + total);
             return total;
 
         } catch (NoSuchElementException | NumberFormatException e) {

@@ -45,8 +45,8 @@ public class amazonTest {
         cartPage.openCart();
         double expectedTotal = VideoGamesPage.itemsTotal;
         double actualTotal = cartPage.getDisplayedCartTotal();
-        System.out.println("Calculated manually: " + expectedTotal);
-        System.out.println("Shown in Cart: " + actualTotal);
+        System.out.println("Total calculated manually: " + expectedTotal);
+        System.out.println("Total shown in Cart: " + actualTotal);
         Assert.assertEquals(actualTotal, expectedTotal, 0.01, "Mismatch between added items total and cart total!");
         cartPage.proceedToCheckout();
         loginPage.enterPhone("55XXXXXXX"); // Replace with test data

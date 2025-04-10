@@ -56,7 +56,6 @@ public class VideoGamesPage {
         for (WebElement product : products) {
             if (productHasValidPrice(product)) {
                 double price = extractPrice(product);
-                System.out.println("Final Price Parsed: " + price);
 
                 if (price < 15000) {
                     tryToAddToCart(product, price);
@@ -74,7 +73,7 @@ public class VideoGamesPage {
             product.findElement(By.cssSelector(".a-price .a-price-whole"));
             return true;
         } catch (NoSuchElementException e) {
-            System.out.println("price missing!");
+            System.out.println("Price not found!");
             return false;
         }
     }
@@ -103,10 +102,9 @@ public class VideoGamesPage {
         Thread.sleep(3000);
 
         itemsTotal += price;
-        System.out.println("Running Total Updated: " + itemsTotal);
+        System.out.println("Total Updated: " + itemsTotal);
 
         String cartCount = driver.findElement(By.id("nav-cart-count")).getText();
-        System.out.println("Cart count after click: " + cartCount);
     }
 
     public void moveThroughPages(int maxPages) throws InterruptedException {
