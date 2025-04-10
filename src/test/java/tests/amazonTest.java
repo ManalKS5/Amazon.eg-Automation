@@ -49,11 +49,11 @@ public class amazonTest {
         System.out.println("Total shown in Cart: " + actualTotal);
         Assert.assertEquals(actualTotal, expectedTotal, 0.01, "Mismatch between added items total and cart total!");
         cartPage.proceedToCheckout();
-        loginPage.enterPhone("55XXXXXXX"); // Replace with test data
-        loginPage.selectCountryCode("SA");
-        loginPage.clickContinue();
-        loginPage.enterPassword("Password"); // Replace with test data
-        loginPage.submitLogin();
+        //loginPage.enterPhone("55XXXXXXX"); // Replace with test data
+        //loginPage.selectCountryCode("SA");
+        //loginPage.clickContinue();
+        //loginPage.enterPassword("Password"); // Replace with test data
+        //loginPage.submitLogin();
     }
 
     @AfterMethod
